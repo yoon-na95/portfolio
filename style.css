@@ -372,4 +372,5 @@ body { display: block; }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
