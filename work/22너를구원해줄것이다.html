@@ -2,34 +2,57 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>work</title>
+  <title>너를 구원해 줄 것이다 – YOON NA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="sidebar">
+  <!-- 사이드바 -->
+  <aside class="sidebar">
     <div class="logo">
-      <a href="/">
-      <img src="https://cdn.glitch.global/33858d31-ac72-4e90-97e3-aa058dbac53b/%E1%84%8B%E1%85%A1%E1%84%90%E1%85%B3%E1%84%87%E1%85%A9%E1%84%83%E1%85%B3%202.png?v=1747832358277" alt="YOON NA 로고">
-    </a>
+      <a href="../index.html">
+        <!-- (권장) ../images/logo.png 로 교체 -->
+        <img src="../images/logo.png" alt="YOON NA 로고">
+      </a>
     </div>
     <nav>
-      <a href="/work.html">WORK</a>
-      <a href="/review.html">REVIEW/TEXT</a>
-      <a href="/cv.html">CV</a>
-      <a href="/contact.html">CONTACT</a>
+      <a href="../work.html" aria-current="page">WORK</a>
+      <a href="../review.html">REVIEW/TEXT</a>
+      <a href="../cv.html">CV</a>
+      <a href="../contact.html">CONTACT</a>
     </nav>
-  </div>
+  </aside>
 
-  <div class="project-detail">
-    <h2>너를 구원해 줄 것이다</h2>
-   <figure>
-      <img src="https://cdn.glitch.global/33858d31-ac72-4e90-97e3-aa058dbac53b/222.jpg?v=1748170355078" alt="작품 이미지">
+  <!-- 작품 상세 -->
+  <section class="project-detail" aria-labelledby="project-title">
+    <h2 id="project-title">너를 구원해 줄 것이다</h2>
+    <h3>캔버스에 아크릴, 헌금함 · <time datetime="2022">2022</time></h3>
+
+    <figure>
+      <!-- (권장) ../images/work/22-너를구원해줄것이다.jpg 로 교체 -->
+      <img
+        src="../images/image-work/22-너를구원해줄것이다.jpg"
+        alt="‘너를 구원해 줄 것이다’ 작품 이미지"
+        loading="lazy">
       <figcaption>너를 구원해 줄 것이다, 캔버스에 아크릴, 헌금함, 2022</figcaption>
     </figure>
+
     <p>
-    인터넷으로 검색하는 정보는 불확실하다. 검증을 거치지 않고 직접적으로 사람들에게 전달된다. 우리는 이 정보를 어디까지 믿을 수 있을까?
+      인터넷으로 검색하는 정보는 불확실하다. 검증을 거치지 않고 직접적으로 사람들에게 전달된다.
+      우리는 이 정보를 어디까지 믿을 수 있을까?
     </p>
-  </div>
+
+    <!-- 필요 시 디테일 이미지 추가 -->
+    <!--
+    <figure>
+      <img src="../images/work/22-너를구원해줄것이다-디테일1.jpg" alt="디테일 이미지" loading="lazy">
+      <figcaption>디테일</figcaption>
+    </figure>
+    -->
+
+    <!-- 목록으로 돌아가기 -->
+    <p><a href="../work.html">← 작품 목록으로</a></p>
+  </section>
 </body>
 </html>
