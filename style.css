@@ -374,3 +374,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.back-link {
+   color: gray;
+}
