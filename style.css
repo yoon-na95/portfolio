@@ -190,7 +190,7 @@ figcaption {
 .review-list a {
   text-decoration: none;
   color: #111111;
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: none;
   padding-bottom: 2px;
 }
 
