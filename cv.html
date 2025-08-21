@@ -2,47 +2,82 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>CV</title>
-  <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <title>CV – YOON NA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sidebar">
+  <!-- 사이드바 -->
+  <aside class="sidebar">
     <div class="logo">
-      <a href="/">
-      <img src="https://cdn.glitch.global/33858d31-ac72-4e90-97e3-aa058dbac53b/%E1%84%8B%E1%85%A1%E1%84%90%E1%85%B3%E1%84%87%E1%85%A9%E1%84%83%E1%85%B3%202.png?v=1747832358277" alt="YOON NA 로고">
-    </a>
+      <a href="index.html">
+        <!-- (권장) images/logo.png 로 교체 -->
+        <img src="images/logo.png" alt="YOON NA 로고">
+      </a>
     </div>
     <nav>
-      <a href="/work.html">WORK</a>
-      <a href="/review.html">REVIEW/TEXT</a>
-      <a href="/cv.html">CV</a>
-      <a href="/contact.html">CONTACT</a>
+      <a href="work.html">WORK</a>
+      <a href="review.html">REVIEW/TEXT</a>
+      <a href="cv.html" aria-current="page">CV</a>
+      <a href="contact.html">CONTACT</a>
     </nav>
-  </div>
-  <div class="cv-section">
-    <h2>CV</h2>
+  </aside>
+
+  <!-- CV 본문 -->
+  <section class="cv-section" aria-labelledby="cv-title">
+    <h2 id="cv-title">CV</h2>
+
+    <!-- 필요 시 PDF 다운로드 링크 -->
+    <!-- <p><a href="files/YOON_NA_CV.pdf" download>CV 다운로드 (PDF)</a></p> -->
 
     <h3>학력</h3>
     <ul>
-      <li>2015-2020 성신여자대학교 조소과 졸업</li>
-      <li>2023-     홍익대학교 일반대학원 조소과 재학</li>
+      <li>
+        <strong>성신여자대학교</strong> 조소과 졸업
+        (<time datetime="2015">2015</time>–<time datetime="2020">2020</time>)
+      </li>
+      <li>
+        <strong>홍익대학교 일반대학원</strong> 조소과 재학
+        (<time datetime="2023">2023</time>– )
+      </li>
     </ul>
 
     <h3>개인전</h3>
     <ul>
-      <li>&lt;무명인들의 사회&gt; 갤러리 도스 /24.10.23-24.10.28</li>
+      <li>
+        &lt;무명인들의 사회&gt; · 갤러리 도스 ·
+        <time datetime="2024-10-23">24.10.23</time>–<time datetime="2024-10-28">24.10.28</time>
+      </li>
     </ul>
 
     <h3>단체전</h3>
     <ul>
-      <li>&lt;이상한 공간展&gt; R3028 /17.09.14-17.09.18</li>
-      <li>&lt;Time lapse展&gt; 성북구작은갤러리 /19.02.08-19.02.14</li>
-      <li>&lt;2019 성신여자대학교 조소과 졸업전시 "S"sculpture&gt; 성신여자대학교 /19.11.19-19.11.25</li>
-      <li>&lt;불은 불을 태우지 않는다&gt; 뎁센드2갤러리 /23.09.21-23.09.25</li>
-      <li>&lt;우연히, 호수&gt; 홍익대학교갤러리 /24.01.08-24.01.15</li>
-      <li>&lt;시간 위에 새겨진 도시&gt; 답십리아트랩 /25.02.01-25.02.27</li>
+      <li>
+        &lt;이상한 공간展&gt; · R3028 ·
+        <time datetime="2017-09-14">17.09.14</time>–<time datetime="2017-09-18">17.09.18</time>
+      </li>
+      <li>
+        &lt;Time lapse展&gt; · 성북구작은갤러리 ·
+        <time datetime="2019-02-08">19.02.08</time>–<time datetime="2019-02-14">19.02.14</time>
+      </li>
+      <li>
+        &lt;2019 성신여자대학교 조소과 졸업전시 "S"sculpture&gt; · 성신여자대학교 ·
+        <time datetime="2019-11-19">19.11.19</time>–<time datetime="2019-11-25">19.11.25</time>
+      </li>
+      <li>
+        &lt;불은 불을 태우지 않는다&gt; · 뎁센드2갤러리 ·
+        <time datetime="2023-09-21">23.09.21</time>–<time datetime="2023-09-25">23.09.25</time>
+      </li>
+      <li>
+        &lt;우연히, 호수&gt; · 홍익대학교갤러리 ·
+        <time datetime="2024-01-08">24.01.08</time>–<time datetime="2024-01-15">24.01.15</time>
+      </li>
+      <li>
+        &lt;시간 위에 새겨진 도시&gt; · 답십리아트랩 ·
+        <time datetime="2025-02-01">25.02.01</time>–<time datetime="2025-02-27">25.02.27</time>
+      </li>
     </ul>
-  </div>
+  </section>
 </body>
 </html>
