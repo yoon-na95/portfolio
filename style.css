@@ -1,0 +1,284 @@
+/* ----------------------------------------------
+   [공통 스타일] 전체 기본 스타일 및 타이포그래피
+---------------------------------------------- */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  display: flex;
+}
+
+figure {
+  margin: 20px 0 10px 0;
+  text-align: right;
+}
+
+figure img {
+  display: block;
+  margin-bottom: 4px;
+}
+
+figcaption {
+  font-size: 12px; /* 이미지 캡션 (작품 하단 설명) */
+  color: #999999;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+
+/* ----------------------------------------------
+   [사이드바] 로고 + 메뉴
+---------------------------------------------- */
+.sidebar {
+  width: 200px;
+  padding: 40px 20px;
+  background: #ffffff;
+  border-right: 1px solid #dddddd;
+  text-align: right;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 14px; /* 사이드 메뉴 항목 (WORK, CV 등) */
+  letter-spacing: 3px;
+}
+
+/* ----------------------------------------------
+   [메인 페이지] 인트로 이미지 + 텍스트
+---------------------------------------------- */
+.main {
+  margin-left: 240px;
+  padding: 40px;
+}
+
+.main-image {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.intro-text {
+  max-width: 800px;
+  text-align: left;
+}
+
+.intro-text p {
+  font-size: 14px; /* 메인페이지 소개 문단 텍스트 */
+  line-height: 1.8;
+  color: #111111;
+}
+
+/* ----------------------------------------------
+   [WORK] 작품 목록 그리드 + 상세페이지
+---------------------------------------------- */
+.gallery {
+  margin-left: 240px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #dddddd;
+}
+
+.project-detail {
+  margin-left: 240px;
+  padding: 60px;
+  max-width: 800px;
+}
+
+.project-detail img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.project-detail h2 {
+  font-size: 18px; /* 작품 상세 제목 */
+  margin-bottom: 20px;
+  color: #111111;
+}
+
+.project-detail p {
+  font-size: 14px; /* 작품 내용 */
+  line-height: 1.8;
+  white-space: pre-line;
+  color: #111111;
+}
+
+.project-detail h3 {
+  font-size: 12px; /* 작품 부제, 날짜 등 부가정보 */
+  line-height: 1.0;
+  color: #666666;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ----------------------------------------------
+   [REVIEW/TEXT] 리뷰 목록 및 기사형 상세페이지
+---------------------------------------------- */
+.review-list {
+  margin-left: 240px;
+  padding: 60px;
+  max-width: 800px;
+}
+
+.review-list h2 {
+  font-size: 18px; /* 리뷰 목록 페이지 상단 제목 */
+  margin-bottom: 40px;
+  color: #111111;
+}
+
+.review-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review-list li {
+  font-size: 14px; /* 리뷰 리스트 항목 제목 */
+  margin-bottom: 15px;
+}
+
+.review-list a {
+  text-decoration: none;
+  color: #111111;
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 2px;
+}
+
+.review-article {
+  margin-left: 240px;
+  padding: 60px;
+  max-width: 800px;
+}
+
+.review-article h2 {
+  font-size: 18px; /* 리뷰 상세 제목 */
+  margin-bottom: 10px;
+  text-align: right;
+  color: #111111;
+}
+
+.review-article .date,
+.review-article .author {
+  font-size: 13px; /* 리뷰 작성자/날짜 정보 */
+  color: #666666;
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+.review-article p {
+  font-size: 14px; /* 리뷰 본문 내용 */
+  line-height: 2.0;
+  margin-bottom: 20px;
+  white-space: pre-line;
+  color: #111111;
+}
+
+/* ----------------------------------------------
+   [CV] 이력 페이지
+---------------------------------------------- */
+.cv-section {
+  margin-left: 240px;
+  padding: 60px;
+  max-width: 800px;
+}
+
+.cv-section h2 {
+  font-size: 18px; /* CV 메인 섹션 제목 */
+  margin-bottom: 30px;
+  color: #111111;
+}
+
+.cv-section h3 {
+  font-size: 16px; /* CV 소제목 (예: EDUCATION) */
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: #666666;
+}
+
+.cv-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-section li {
+  font-size: 14px; /* CV 상세 항목 */
+  line-height: 1.8;
+  margin-bottom: 6px;
+  color: #111111;
+}
+
+/* ----------------------------------------------
+   [CONTACT] 연락처 페이지
+---------------------------------------------- */
+.contact-section {
+  margin-left: 240px;
+  padding: 60px;
+  max-width: 800px;
+}
+
+.contact-section h2 {
+  font-size: 18px; /* Contact 페이지 제목 */
+  margin-bottom: 30px;
+  color: #111111;
+}
+
+.contact-section p {
+  font-size: 14px; /* Contact 설명 문단 */
+  line-height: 2;
+  color: #111111;
+}
+
+.contact-section a {
+  color: #111111;
+  text-decoration: underline;
+}
