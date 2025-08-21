@@ -20,8 +20,8 @@ figure img {
 }
 
 figcaption {
-  font-size: 12px; /* 이미지 캡션 (작품 하단 설명) */
-  color: #999999;
+  font-size: 14px; /* 이미지 캡션 (작품 하단 설명) */
+  color: #111111;
   margin: 0;
   line-height: 1.4;
 }
