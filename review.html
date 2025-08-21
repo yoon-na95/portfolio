@@ -2,31 +2,47 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>REVIEW/TEXT</title>
+  <title>REVIEW/TEXT – YOON NA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="sidebar">
+  <!-- 사이드바 -->
+  <aside class="sidebar">
     <div class="logo">
-      <a href="/">
-      <img src="https://cdn.glitch.global/33858d31-ac72-4e90-97e3-aa058dbac53b/%E1%84%8B%E1%85%A1%E1%84%90%E1%85%B3%E1%84%87%E1%85%A9%E1%84%83%E1%85%B3%202.png?v=1747832358277" alt="YOON NA 로고">
-    </a>
+      <a href="index.html">
+        <!-- (권장) images/logo.png 로 교체 -->
+        <img src="images/logo.png" alt="YOON NA 로고">
+      </a>
     </div>
     <nav>
-      <a href="/work.html">WORK</a>
-      <a href="/review.html">REVIEW/TEXT</a>
-      <a href="/cv.html">CV</a>
-      <a href="/contact.html">CONTACT</a>
+      <a href="work.html">WORK</a>
+      <a href="review.html" aria-current="page">REVIEW/TEXT</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">CONTACT</a>
     </nav>
-  </div>
+  </aside>
 
-  <div class="review-list">
-    <h2>REVIEW/TEXT</h2>
+  <!-- 리뷰/텍스트 목록 -->
+  <section class="review-list" aria-labelledby="review-title">
+    <h2 id="review-title">REVIEW/TEXT</h2>
     <ul>
-      <li><a href="text/자아의가치.html">자아의 가치 – 2024.10</a></li>
-      <li><a href="text/무명인들의사회.html">윤나 작가, '무명인들의 사회' 전시로 디지털 시대의 자아 탐구 – 2024.10.22</a></li>
+      <li>
+        <a href="text/자아의가치.html">
+          <strong>자아의 가치</strong> <span aria-hidden="true">–</span>
+          <time datetime="2024-10">2024.10</time>
+        </a>
+      </li>
+      <li>
+        <a href="text/무명인들의사회.html">
+          윤나 작가, ‘무명인들의 사회’ 전시로 디지털 시대의 자아 탐구
+          <span aria-hidden="true">–</span>
+          <time datetime="2024-10-22">2024.10.22</time>
+        </a>
+      </li>
+      <!-- 새 글을 추가하면 이 아래로 <li> 복제 -->
     </ul>
-  </div>
+  </section>
 </body>
 </html>
