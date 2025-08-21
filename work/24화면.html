@@ -1,39 +1,55 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>work</title>
+  <title>위로상자 – YOON NA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="sidebar">
+  <!-- 사이드바 -->
+  <aside class="sidebar">
     <div class="logo">
-      <a href="/">
-      <img src="https://cdn.glitch.global/33858d31-ac72-4e90-97e3-aa058dbac53b/%E1%84%8B%E1%85%A1%E1%84%90%E1%85%B3%E1%84%87%E1%85%A9%E1%84%83%E1%85%B3%202.png?v=1747832358277" alt="YOON NA 로고">
-    </a>
+      <a href="../index.html">
+        <!-- (권장) images/logo.png 로 교체 -->
+        <img src="../images/logo.png" alt="YOON NA 로고">
+      </a>
     </div>
     <nav>
-      <a href="/work.html">WORK</a>
-      <a href="/review.html">REVIEW/TEXT</a>
-      <a href="/cv.html">CV</a>
-      <a href="/contact.html">CONTACT</a>
+      <a href="../work.html" aria-current="page">WORK</a>
+      <a href="../review.html">REVIEW/TEXT</a>
+      <a href="../cv.html">CV</a>
+      <a href="../contact.html">CONTACT</a>
     </nav>
-  </div>
+  </aside>
+  <!-- 작품 상세 -->
+  <section class="project-detail" aria-labelledby="project-title">
+    <h2 id="project-title">화면</h2>
 
-  <div class="project-detail">
-    <h2>화면</h2>
-   <figure>
-      <img src="https://cdn.glitch.global/33858d31-ac72-4e90-97e3-aa058dbac53b/%E1%84%89%E1%85%A9%E1%86%AB%E1%84%80%E1%85%A1%E1%84%85%E1%85%A1%E1%86%A8%20%E1%84%89%E1%85%B3%E1%84%90%E1%85%B5%E1%86%AF%E1%84%8F%E1%85%A5%E1%86%BA.jpg?v=1747835001579" alt="작품 이미지">
+    <figure>
+      <img src="../images/image-work/24-화면.jpg" alt="화면 작품 이미지" loading="lazy">
       <figcaption>화면, 2분 1초, 2024</figcaption>
     </figure>
+
     <div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5NdYjnIgSKE?si=SRPT8zFS4ujNdWE5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+      <iframe src="https://www.youtube.com/embed/5NdYjnIgSKE?si=SRPT8zFS4ujNdWE5"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+    
+    
     <p>
       우리가 만지는 데이터들은 실체를 가지고 있지 않다. 우리는 그냥 허공을 만지작 거리고 있는 것일지도 모른다.
-      <h3>&lt;무명인들의 사회&gt; 갤러리 도스 /24.10.23-24.10.28</h3>
     </p>
+
+   <h3>&lt;무명인들의 사회&gt; 갤러리 도스 /24.10.23-24.10.28</h3>
+   
+    <!-- 목록으로 돌아가기 -->
+    <p><a href="../work.html">← 작품 목록으로</a></p>
   </div>
 </body>
 </html>
